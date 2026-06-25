@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Hot Beans Services</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="Script4.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div class="logo-box">
+        <div class="top-section">
+            <div class="logo"><a>Hot Beans</a></div>
+
+            <div class="navigation-bar">
+                <div class="navigation">
+                    <ul class="navtext"><li><a href="index.html">home</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage2.html">about</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage3.html">beans</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage4.html">our services</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage5.html">bean feedback</a></li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <div class="about-intro"><p><b>Our Services</b></p></div>
+        <div><p>We offer a range of specialized services tailored to meet your individual needs. Our approach is focused on understanding and responding to what you require, providing effective and practical solutions.</p></div>
+    </div>
+
+    <div class="services-wrapper">
+        <div class="services-section">
+        <div class="services-box">
+            <img src="basic.jpg" class="responsive-img" alt="beans" width="400" height="300" />
+            <button type="button" onclick="openPopup()"><b>Basic</b></button>
+            <p>We offer a range of services for basic beginners</p>
+        </div>
+
+            <div class="services-popup" id="ServicesPopup">
+                <div class="services-container">
+                    <p>We offer a range of services for basic beginners, designed to help you build a strong foundation in web development.
+                    Our beginner services include easy-to-follow guidance, introductory coding support, and simple project-based learning to help you understand key concepts such as HTML, CSS, and basic JavaScript.
+                    We also provide step-by-step tutorials, helpful resources, and friendly support to ensure you gain confidence as you develop your skills.
+                    Whether you are completely new or looking to improve your abilities, our services are tailored to help you get started and progress at your own pace.</p>
+                    <button type="button" onclick="closePopup()">Close</button>
+                </div>
+            </div>
+
+        <div class="services-box">
+            <img src="professional.jpg" class="responsive-img" alt="beans" width="400" height="300" />
+            <button type="button" onclick="openProfPopup()"><b>Professional</b></button>
+            <p>We offer a range of services for professional, established developers</p>
+        </div>
+
+            <div class="services-popup" id="ServicesPopupProf">
+                <div class="services-container">
+                    <p>We offer a range of services for professional, established developers, aimed at enhancing and refining your existing skills.
+                    Our services include advanced coding support, best practice guidance, and access to more complex project opportunities that challenge your problem-solving abilities.
+                    We provide resources on modern frameworks, efficient workflows, and optimisation techniques to help you stay up to date with industry standards.
+                    Additionally, we offer collaborative opportunities and expert advice to support your growth and help you take your development skills to the next level.</p>
+                    <button type="button" onclick="closeProfPopup()">Close</button>
+                </div>
+            </div>
+
+        <div class="services-box">
+            <img src="business.jpg" class="responsive-img" alt="beans" width="400" height="300" />
+            <button type="button" onclick="openBusPopup()"><b>Business</b></button>
+            <p>We offer a range of services for experienced developers working in a corporate environment</p>
+        </div>
+
+            <div class="services-popup" id="ServicesPopupBus">
+                <div class="services-container">
+                    <p>We offer a range of services for experienced developers working in a corporate environment, focused on supporting large-scale, high-performance solutions.
+                    Our services include enterprise-level development support, system integration guidance, and advanced project management strategies to help you deliver efficient and reliable results.
+                    We provide insights into industry standards, security practices, and scalable architectures, ensuring your work meets professional and organisational demands.
+                    With access to expert advice and collaborative tools, we help you optimise workflows, improve productivity, and succeed in complex corporate projects.</p>
+                    <button type="button" onclick="closeBusPopup()">Close</button>
+                </div>
+            </div>
+
+    </div>
+    </div>
+
+    <div class="contact-intro"><p><b>Contact Us</b></p></div>
+
+    <div class="contact-content">
+        <div class="contact-box">
+            <div class="contact-image"><img src="vintage-phone.png" alt="phone" width="400" height="300" /></div>
+            <div class="contact-text-box">
+                <div class="contact-text">
+                    <p><b>Get in touch</b></p>
+                    <p>(street address)</p>
+                    <p>Manchester, (postcode)</p>
+                    <p>United Kingdom</p>
+                </div>
+                <div class="contact-text">
+                    <p><b>Opening hours</b></p>
+                    <p>Monday-Friday: 9am-5pm</p>
+                    <p>Saturday:Closed</p>
+                    <p>Sunday:Closed</p>
+                </div>
+                <div class="contact-text">
+                    <p><b>Contact us</b></p>
+                    <p>(phonenumber)</p>
+                    <p>(email)</p>
+                </div>
+                <div class="contact-text">
+                    <p><b>Follow us</b></p>
+                    <div class="social-media-icons">
+                        <a href="#" class="icon facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="icon twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="icon instagram"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

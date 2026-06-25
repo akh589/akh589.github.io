@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Hot Beans Feedback</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="Script5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div class="logo-box">
+        <div class="top-section">
+            <div class="logo"><a>Hot Beans</a></div>
+
+            <div class="navigation-bar">
+                <div class="navigation">
+                    <ul class="navtext"><li><a href="index.html">home</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage2.html">about</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage3.html">beans</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage4.html">our services</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage5.html">bean feedback</a></li></ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="about-section">
+        <div class="about-intro"><p><b>Provide us Feedback</b></p></div>
+        <div><p>Feel free to provide us feedback, every piece helps us improve our recruitment solutions!</p></div>
+    </div>
+
+    <div class="form-section">
+        <div class="form-box">
+            <div class="textup">
+                Feedback Form
+            </div>
+            <form id="FeedbackForm" onsubmit="return submitApplication()" action="/action_page.php">
+                <label for="uname">
+                    Name
+                </label>
+                <input type="text" id="uname"
+                       name="uname" required minlength="2"
+                       oninvalid="this.setCustomValidity('Please enter your name (2 characters long).'"
+                       oninput="this.setCustomValidity('')">
+                <label for="email">
+                    Email Address
+                </label>
+                <input type="email" id="email"
+                       name="email" placeholder="you@example.com" required>
+                <label for="phone">
+                    Phone Number
+                </label>
+                <input type="tel" id="phone"
+                       name="phone" required>
+                <label>
+                    Are you satisfied with our services?
+                </label>
+
+                <div class="radio-group">
+                    <label><input type="radio" name="satisfy" value="yes" checked> Yes</label>
+                    <label><input type="radio" name="satisfy" value="no"> No</label>
+                </div>
+
+
+                <label for="msg">
+                    Write your Feedback:
+                </label>
+                <textarea id="msg" name="msg"
+                          rows="4" cols="10" required minlength="10"
+                          oninvalid="this.setCustomValidity('Please write more than 10 words.'"
+                          oninput="this.setCustomValidity('')">
+            </textarea>
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="contact-intro"><p><b>Contact Us</b></p></div>
+
+    <div class="contact-content">
+        <div class="contact-box">
+            <div class="contact-image"><img src="vintage-phone.png" alt="phone" width="400" height="300" /></div>
+            <div class="contact-text-box">
+                <div class="contact-text">
+                    <p><b>Get in touch</b></p>
+                    <p>(street address)</p>
+                    <p>Manchester, (postcode)</p>
+                    <p>United Kingdom</p>
+                </div>
+                <div class="contact-text">
+                    <p><b>Opening hours</b></p>
+                    <p>Monday-Friday: 9am-5pm</p>
+                    <p>Saturday:Closed</p>
+                    <p>Sunday:Closed</p>
+                </div>
+                <div class="contact-text">
+                    <p><b>Contact us</b></p>
+                    <p>(phonenumber)</p>
+                    <p>(email)</p>
+                </div>
+                <div class="contact-text">
+                    <p><b>Follow us</b></p>
+                    <div class="social-media-icons">
+                        <a href="#" class="icon facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="icon twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="icon instagram"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

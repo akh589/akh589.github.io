@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Hot Beans Homepage</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="Script1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div class="logo-box">
+        <div class="top-section">
+            <div class="logo"><a>Hot Beans</a></div>
+
+            <div class="navigation-bar">
+                <div class="navigation">
+                    <ul class="navtext"><li><a href="index.html">home</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage2.html">about</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage3.html">beans</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage4.html">our services</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage5.html">bean feedback</a></li></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <form onsubmit="return handleSearch(event)">
+                <input type="text" id="searchinput" placeholder="Search...(e.g.about,contact,beans, vacancies)" required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="intro-box">
+
+        <div class="intro">
+            <div><p><b>About Hot Beans</b></p></div>
+            <div>
+                <p>Established in 2007, Hot Beans started out as a small company run by a few close friends in the hope to showcase our talent of website design. Now as well known developers, Hot Beans are still providing the highest quality service as we could when we began our journey. From the beginning we based our brand around the key ideas we would want around the center of a company.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content-intro">
+        <div><p><b>Our Beans</b></div>
+        <div><p>We offer BEAN recruitment solutions for both web developers and companies seeking top talent.</p></div>
+    </div>
+
+    <div class="page-content">
+        <div class="content-box">
+            <p>Beans</p>
+            <div class="content-image"><img src="webdev.jpg" class="responsive-img" alt="beans" width="400" height="300" /></div>
+            <p><b>Web developer looking for new challenges?</b></p>
+            <button type="button" onclick="GoToVacancies()">View our job openings</button>
+        </div>
+        <div class="content-box">
+            <p>Beans</p>
+            <div class="content-image"><img src="webdevtalent.jpg" class="responsive-img" alt="beans" width="400" height="300" /></div>
+            <p><b>Seeking web developer talents?</b></p>
+            <button type="button" onclick="GoToServices()">Explore our services</button>
+        </div>
+        <div class="content-box">
+            <p>Beans</p>
+            <div class="content-image"><img src="careerguide.jpg" class="responsive-img" alt="beans" width="400" height="300" /></div>
+            <p><b>Need career guidance?</b></p>
+            <button type="button" onclick="GoToFeedback()">Learn more</button>
+        </div>
+        <div class="content-box">
+            <p>Beans</p>
+            <div class="content-image"><img src="bookapp.jpg" class="responsive-img" alt="beans" width="400" height="300" /></div>
+            <p><b>Book a consultation</b></p>
+            <button type="button" onclick="openForm()">Book an appointment</button>
+        </div>
+    </div>
+
+    <div class="form-popup" id="ApplyForm">
+        <form id="Applyform" onsubmit="return submitApplication()" action="/action_page.php" class="form-container">
+            <h1>Appointment</h1>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Book</legend>
+                <div class="form-group">
+                    <label for="cover-letter">What is the purpose of this appointment?</label>
+                    <textarea id="cover-letter" name="cover_letter"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="resume-upload">Choose Date/Time</label>
+                    <div class="file-upload-group">
+                    <input type="datetime-local" id="dateTimePicker" name="datetime" required />
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-buttons">
+                <button type="submit" class="submit-btn">Submit Application</button>
+                <button type="button" onclick="closeForm()">Close Form</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="contact-intro"><p><b>Contact Us</b></p></div>
+
+    <div class="contact-content">
+        <div class="contact-box">
+            <div class="contact-image"><img src="vintage-phone.png" alt="phone" width="400" height="300" /></div>
+            <div class="contact-text-box">
+                <div class="contact-text">
+                    <p><b>Get in touch</b></p>
+                    <p>(street address)</p>
+                    <p>Manchester, (postcode)</p>
+                    <p>United Kingdom</p>
+                </div>
+                <div class="contact-text">
+                    <p><b>Opening hours</b></p>
+                    <p>Monday-Friday: 9am-5pm</p>
+                    <p>Saturday:Closed</p>
+                    <p>Sunday:Closed</p>
+                </div>
+                <div class="contact-text">
+                    <p><b>Contact us</b></p>
+                    <p>(phonenumber)</p>
+                    <p>(email)</p>
+                </div>
+                <div class="contact-text">
+                    <p><b>Follow us</b></p>
+                    <div class="social-media-icons">
+                        <a href="#" class="icon facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="icon twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="icon instagram"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

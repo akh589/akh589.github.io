@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Hot Beans Vacancies</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="Vacancies.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div class="logo-box">
+        <div class="top-section">
+            <div class="logo"><a>Hot Beans</a></div>
+
+            <div class="navigation-bar">
+                <div class="navigation">
+                    <ul class="navtext"><li><a href="index.html">home</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage2.html">about</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage3.html">beans</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage4.html">our services</a></li></ul>
+                    <ul class="navtext"><li><a href="HTMLPage5.html">bean feedback</a></li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <div class="about-intro"><p><b>Vacancies</b></p></div>
+    </div>
+
+    <div class="job-search">
+        <section class="search">
+            <h2>Find Job</h2>
+            <form action="#" method="get">
+                <input type="text" name="keywords"
+                       placeholder="Keywords" required>
+                <input type="text" name="location"
+                       placeholder="Location" required>
+                <input type="text" name="company"
+                       placeholder="Company">
+                <button type="submit">
+                    Search
+                </button>
+            </form>
+        </section>
+    </div>
+
+    <section class="job-listings">
+        <h2>Latest Job Listings</h2>
+        <ul class="job-results">
+            <li class="job-results">
+                <h3>Web Developer</h3>
+                <p>Company: ABC Tech</p>
+                <p>Location: Manchester</p>
+                <p>Description: Looking for a web developer with experience in frontend Javascript, HTML and CSS.</p>
+                <p>Required: 1 year of experience with JS, HTML, CSS. Experience with using Git as a version control tool.</p>
+                <button type="button" onclick="openForm()">Apply Now</button>
+            </li>
+            <li>
+                <h3>Graphic Designer</h3>
+                <p>Company: XYZ Design</p>
+                <p>Location: Manchester </p>
+                <p>Description: Looking for a graphic designer with experience in Adobe Photoshop and HTML/CSS/JS website design.</p>
+                <p>Required: Proficient with Adobe Photoshop, Illustrator. Understanding the principles of visual design, understanding UX principles and following WCAG standards</p>
+                <button type="button" onclick="openForm()">Apply Now</button>
+            </li>
+        </ul>
+    </section>
+
+    <div class="form-popup" id="ApplyForm">
+        <form id="Applyform" onsubmit="return submitApplication()" action="/action_page.php" class="form-container">
+            <h1>Apply</h1>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Application</legend>
+                <div class="form-group">
+                    <label for="cover-letter">Cover Letter</label>
+                    <textarea id="cover-letter" name="cover_letter" placeholder="Why are you a great fit for this role?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="resume-upload">Upload Resume/CV</label>
+                    <div class="file-upload-group">
+                        <!--file input hidden-->
+                        <input type="file" id="resume-upload" name="resume" accept=".pdf,.doc,.docx" required>
+                        <!--label act as button-->
+                        <label for="resume-upload" class="file-upload-label">Choose File</label>
+                        <!-- display file name, if no file say no file chosen -->
+                        <span class="file-name" id="file-name-display">No file chosen</span>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-buttons">
+                <button type="submit" class="submit-btn">Submit Application</button>
+                <button type="button" onclick="closeForm()">Close Form</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="contact-intro"><p><b>Contact Us</b></p></div>
+
+    <div class="contact-content">
+        <div class="contact-box">
+            <div class="contact-image"><img src="vintage-phone.png" alt="phone" width="400" height="300" /></div>
+            <div class="contact-text-box">
+                <div class="contact-text">
+                    <p><b>Get in touch</b></p>
+                    <p>(street address)</p>
+                    <p>Manchester, (postcode)</p>
+                    <p>United Kingdom</p>
+                </div>
+                <div class="contact-text">
+                    <p><b>Opening hours</b></p>
+                    <p>Monday-Friday: 9am-5pm</p>
+                    <p>Saturday:Closed</p>
+                    <p>Sunday:Closed</p>
+                </div>
+                <div class="contact-text">
+                    <p><b>Contact us</b></p>
+                    <p>(phonenumber)</p>
+                    <p>(email)</p>
+                </div>
+                <div class="contact-text">
+                    <p><b>Follow us</b></p>
+                    <div class="social-media-icons">
+                        <a href="#" class="icon facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="icon twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="icon instagram"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
